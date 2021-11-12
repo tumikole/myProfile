@@ -1,0 +1,53 @@
+html {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+body {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.App {
+  text-align: center;
+  background-image: url("https://acegif.com/wp-content/gifs/water-22.gif");
+  height: 100vh;
+  background-repeat: "no-repeat";
+  background-size: cover;
+}
+/* ////////////////////////////////////////////m */
+.profile-header-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-header-img {
+  padding: 54px;
+}
+
+.img-circle {
+  width: 20%;
+  /* height: 30%; */
+  border: 2px solid #51d2b7;
+}
+
+.profile-header {
+  margin-top: 43px;
+}
+
+/**
+* Ranking component
+*/
+.rank-label-container {
+  margin-top: -19px;
+  /* z-index: 1000; */
+  text-align: center;
+}
+
+.label.label-default.rank-label {
+  background-color: rgb(81, 210, 183);
+  padding: 5px 10px 5px 10px;
+  border-radius: 27px;
+}
+
+/* /////////////////////////////////j */
