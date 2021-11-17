@@ -15,20 +15,32 @@ body {
   background-repeat: "no-repeat";
   background-size: cover;
 }
-/* ////////////////////////////////////////////m */
-.profile-header-container {
-  margin: 0 auto;
-  text-align: center;
+
+.AppGrid {
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
+
+.nav {
+  position: sticky;
+  float:right;
+  /* display: none !important; */
+}
+
+.AppGridSide1 {
+  height: 100%;
+}
+/* ////////////////////////////////////////////m */
 
 .profile-header-img {
   padding: 54px;
 }
 
 .img-circle {
-  width: 20%;
-  /* height: 30%; */
+  width: 40vh;
+  height: 40vh;
   border: 2px solid #51d2b7;
+  border-radius: 3rem;
 }
 
 .profile-header {
@@ -44,10 +56,158 @@ body {
   text-align: center;
 }
 
-.label.label-default.rank-label {
-  background-color: rgb(81, 210, 183);
-  padding: 5px 10px 5px 10px;
-  border-radius: 27px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-/* /////////////////////////////////j */
+li {
+  float: right;
+}
+
+li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  display: block;
+  /* background-color: */
+  padding: 20px;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: #51d2b7;
+}
+
+.AppGridSide2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.scroll {
+  width: 100%;
+  height: 70vh;
+  overflow: scroll;
+}
+
+html ::-webkit-scrollbar {
+  display: none;
+}
+
+.SocialIconsContainer {
+  /* display: grid; */
+  float: left;
+  /* margin: 1.5rem; */
+  height: 15vh;
+}
+
+.SocialIconsContainer a {
+  color: white;
+  padding-left: 5.5rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.SocialIconsContainer .SocialIcons {
+  height: 20%;
+}
+
+
+.AboutContainer {
+  border: 2px solid #51d2b7;
+  border-radius: 3rem;
+}
+
+.AboutContainer p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  width: 50% !important;
+  margin: auto !important;
+}
+
+/* button/////// */
+
+.pushable {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #51d2b7;
+  transform: translateY(2px);
+}
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #1e1f1e;
+}
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  color: white;
+  background: #51d2b7;
+  transform: translateY(-4px);
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+}
+.pushable:hover .shadow {
+  transform: translateY(4px);
+}
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+.pushable:active .shadow {
+  transform: translateY(1px);
+}
+
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ////////////////////////////////////Skills/ */
+
+.checked {
+  color: orange;
+}
+.frontEnd{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.leftDiv1 {
+}
+.rightDiv1 {
+}
+
+.backEnd {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  olumns: 1fr 1fr;
+}
+.leftDiv2 {
+}
+.rightDiv2 {
+}
