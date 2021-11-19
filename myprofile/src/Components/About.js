@@ -8,7 +8,7 @@ export default class About extends Component {
         <div className="AboutContainer">
           <p style={{ textAlign: "left", color: "white" }}>
             {" "}
-            Hey there... My name is Ramollo Samuel Tumisang. I am 31 years old.
+            Hi there... My name is Ramollo Samuel Tumisang. I am 31 years old.
             Still living with my mom but spent most of my years with my
             grandparents. I always act more mature than my age. I have had a lot
             of people invest in me academically, so I have tried my utmost in

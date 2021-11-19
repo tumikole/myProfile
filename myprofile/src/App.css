@@ -16,15 +16,18 @@ body {
   background-size: cover;
 }
 
-.AppGrid {
-  display: grid;
-  grid-template-columns: 30% 70%;
+.AppHeader {
+  mix-blend-mode: unset;
+  background-color: #51d2b7;
 }
 
 .nav {
   position: sticky;
-  float:right;
-  /* display: none !important; */
+  float: right;
+}
+.AppGrid {
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
 
 .AppGridSide1 {
@@ -114,7 +117,6 @@ html ::-webkit-scrollbar {
   height: 20%;
 }
 
-
 .AboutContainer {
   border: 2px solid #51d2b7;
   border-radius: 3rem;
@@ -193,7 +195,7 @@ html ::-webkit-scrollbar {
 .checked {
   color: orange;
 }
-.frontEnd{
+.frontEnd {
   display: grid;
   grid-template-columns: 40% 60%;
 }
