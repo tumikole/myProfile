@@ -10,7 +10,7 @@ import "../App.css";
 export default class HomePage extends Component {
   render() {
     return (
-      <div style={{ paddingTop: "8rem" }} class="HomeContainer">
+      <div style={{ paddingTop: "5rem" }} class="HomeContainer">
         <div class="row">
           <div class="profile-header-container">
             <div class="profile-header-img">
