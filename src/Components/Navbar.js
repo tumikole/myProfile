@@ -1,22 +1,15 @@
-import React, { Component } from "react";
-import {Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
 import '../App.css'
 
-const NavbarLink = ({ page }) => {
-  const title = page.charAt(0).toUpperCase() + page.slice(1);
-
-  return <Link to={`/${page}`} className='navbarlink-title'>{title}</Link>
-};
-
-
-const Navbar = () => {
+export default function Navbar() {
   return (
-    <div className='navbar '>
-      <NavbarLink page='home' />
-      <NavbarLink page='gallery' />
-
+    <div className="myNav">
+      {/* <Link to="contact">Contact</Link> */}
+      <Link className="navLinks" to="/skills">Skills</Link>
+      <Link className="navLinks" to="/about">About</Link>
+      <Link className="navLinks" to="/gallery">Gallery</Link>
+      <Link className="navLinks" to="/">Home</Link>
     </div>
-  )
+  );
 }
-
-export default Navbar;
